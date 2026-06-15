@@ -1,23 +1,148 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Luis Lopez | Portafolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UMSA | MEC-237</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <main class="caja">
-    <h1>Luis Lopez</h1>
-    <p>Portafolio para subir informes universitarios.</p>
 
-    <h2>📄 Informes</h2>
-    <ul>
-      <li>Próximamente subiré mis laboratorios aquí.</li>
-    </ul>
+  <header class="hero">
+    <div class="hero-overlay">
+      <img src="imagenes/umsalogo.jpg" alt="Logo UMSA" class="logo">
 
-    <h2>📬 Contacto</h2>
-    <p>Email: tuemail@gmail.com</p>
+      <h1>Universidad Mayor de San Andrés</h1>
+      <h2>Facultad de Ingeniería</h2>
+      <h3>MEC-237</h3>
+      <p class="subtitulo">Métodos y Diseño de Algoritmos III</p>
+
+      <div class="datos">
+        <p><strong>Docente:</strong> Ing. Vidher W. Bustillos D.</p>
+        <p><strong>Estudiante:</strong> Luis Fernando Lopez Calle</p>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#intro">Introducción</a>
+    <a href="#laboratorios">Laboratorios</a>
+    <a href="#videos">Videos</a>
+  </nav>
+
+  <main>
+
+    <section id="intro" class="intro">
+      <h2>Repositorio académico</h2>
+      <p>
+        Este sitio web fue desarrollado como repositorio académico para la materia
+        <strong>MEC-237 Métodos y Diseño de Algoritmos III</strong>.
+      </p>
+      <p>
+        Aquí se presentan los laboratorios realizados durante el semestre,
+        incluyendo informes técnicos, imágenes de los trabajos desarrollados
+        y videos demostrativos.
+      </p>
+    </section>
+
+    <section id="laboratorios">
+      <h2 class="titulo-seccion">Laboratorios</h2>
+
+      <article class="laboratorio">
+        <img src="imagenes/laboratorio1.jpg" alt="Laboratorio 1">
+
+        <div class="contenido">
+          <span class="numero">Laboratorio 1</span>
+          <h3>Adquisición de datos con potenciómetro</h3>
+          <p>
+            Desarrollo de un sistema de adquisición de datos utilizando Arduino,
+            variación de voltaje y registro de resultados para su análisis.
+          </p>
+
+          <div class="botones">
+            <a href="informes/Artículo del laboratorio 1 MEC 237.pdf" target="_blank" class="btn">📄 Ver informe</a>
+            <a href="https://drive.google.com/file/d/1f4ghMnW1AgPPrxor1iO_3hfd6dro7Do5/view?usp=drive_link" target="_blank" class="btn video">🎥 Ver video</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="laboratorio">
+        <img src="imagenes/laboratorio2.jpg" alt="Laboratorio 2">
+
+        <div class="contenido">
+          <span class="numero">Laboratorio 2</span>
+          <h3>Medición de corriente mediante resistencia shunt</h3>
+          <p>
+            Implementación de un método de medición de corriente mediante una
+            resistencia shunt, adquisición de datos y análisis de resultados.
+          </p>
+
+          <div class="botones">
+            <a href="informes/Artículo del laboratorio 2 MEC 237.pdf" target="_blank" class="btn">📄 Ver informe</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="laboratorio">
+        <img src="imagenes/laboratorio3.jpg" alt="Laboratorio 3">
+
+        <div class="contenido">
+          <span class="numero">Laboratorio 3</span>
+          <h3>Sensor de efecto Hall ACS712</h3>
+          <p>
+            Aplicación del sensor ACS712 para el análisis de corriente mediante
+            efecto Hall, comparación de resultados y explicación del funcionamiento.
+          </p>
+
+          <div class="botones">
+            <a href="informes/Artículo laboratorio 3 efecto sala MEC 237.pdf" target="_blank" class="btn">📄 Ver informe</a>
+            <a href="https://drive.google.com/file/d/1XQrFe7bFSESD5K1PKTN74na0wVkJPpiH/view?usp=drive_link" target="_blank" class="btn video">🎥 Ver video</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="laboratorio">
+        <img src="imagenes/laboratorio4.jpg" alt="Laboratorio 4 y 5">
+
+        <div class="contenido">
+          <span class="numero">Laboratorio 4 y 5</span>
+          <h3>Corriente alterna</h3>
+          <p>
+            Análisis de señales de corriente alterna, comportamiento de la señal
+            y desarrollo de la documentación técnica correspondiente.
+          </p>
+
+          <div class="botones">
+            <a href="informes/Articulo laboratorio 4 corriente alterna MEC 237.pdf" target="_blank" class="btn">📄 Ver informe</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="laboratorio especial">
+        <div class="contenido">
+          <span class="numero">Laboratorio 6</span>
+          <h3>LOGO! Soft Comfort: control de iluminación residencial</h3>
+          <p>
+            Simulación de un sistema automatizado para controlar la iluminación
+            exterior e interior de una vivienda mediante sensores de movimiento,
+            temporizadores, alarma y lógica programable en LOGO! Soft Comfort.
+          </p>
+
+          <div class="botones">
+            <a href="https://drive.google.com/file/d/1-gaPcI1tEhN2hvsAlGUiCmZhgS1gbGGs/view?usp=drive_link" target="_blank" class="btn video">🎥 Ver video Laboratorio 6</a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
   </main>
+
+  <footer>
+    <p>Universidad Mayor de San Andrés | MEC-237</p>
+    <p>Luis Fernando Lopez Calle</p>
+  </footer>
+
 </body>
 </html>
