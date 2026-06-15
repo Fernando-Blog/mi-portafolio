@@ -6,7 +6,18 @@
 
 body{
     font-family: 'Segoe UI', sans-serif;
-    background:#f4f6f9;
+
+    background-image:
+    linear-gradient(
+        rgba(255,255,255,0.92),
+        rgba(255,255,255,0.92)
+    ),
+    url("imagenes/portada.jpg");
+
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+
     color:#222;
     line-height:1.6;
 }
