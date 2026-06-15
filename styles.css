@@ -1,18 +1,213 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f2f4f8;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.caja {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:#f4f6f9;
+    color:#222;
+    line-height:1.6;
 }
 
-h1 {
-  color: #1a73e8;
+/* PORTADA */
+
+.hero{
+    background:
+    linear-gradient(rgba(0,0,0,.65),
+    rgba(0,0,0,.65)),
+    url("imagenes/portada.jpg");
+
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-overlay{
+    width:90%;
+    max-width:1000px;
+}
+
+.logo{
+    width:140px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero h2{
+    font-size:2rem;
+    margin-top:10px;
+}
+
+.hero h3{
+    font-size:1.6rem;
+    margin-top:15px;
+    color:#ffd54f;
+}
+
+.subtitulo{
+    font-size:1.2rem;
+    margin-top:10px;
+}
+
+.datos{
+    margin-top:30px;
+    font-size:1.1rem;
+}
+
+/* MENU */
+
+nav{
+    background:#002147;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd54f;
+}
+
+/* SECCIONES */
+
+main{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.intro{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:40px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.titulo-seccion{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:2rem;
+    color:#002147;
+}
+
+/* TARJETAS */
+
+.laboratorio{
+    background:white;
+    display:flex;
+    gap:25px;
+    margin-bottom:30px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.laboratorio img{
+    width:350px;
+    object-fit:cover;
+}
+
+.contenido{
+    padding:25px;
+    flex:1;
+}
+
+.numero{
+    background:#002147;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+    display:inline-block;
+    margin-bottom:10px;
+}
+
+.contenido h3{
+    color:#002147;
+    margin-bottom:15px;
+}
+
+.botones{
+    margin-top:20px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:12px 20px;
+    background:#0056b3;
+    color:white;
+    border-radius:8px;
+    margin-right:10px;
+    margin-top:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.video{
+    background:#d32f2f;
+}
+
+.especial{
+    border-left:8px solid #ff9800;
+}
+
+/* FOOTER */
+
+footer{
+    background:#002147;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .laboratorio{
+        flex-direction:column;
+    }
+
+    .laboratorio img{
+        width:100%;
+        height:250px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .hero h2{
+        font-size:1.5rem;
+    }
+
+    .hero h3{
+        font-size:1.2rem;
+    }
+
 }
